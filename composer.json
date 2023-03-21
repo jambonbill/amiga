@@ -1,0 +1,19 @@
+{
+	"name":"jambonbill/amiga",
+	"authors": [
+        {
+            "name": "Jambonbill",
+            "email": "jambonbill@gmail.com",
+            "homepage": "https://github.com/jambonbill"
+        }
+    ],
+    "autoload": {
+        "psr-0": {
+            "Amiga": "src/"
+        }
+    },
+
+    "require": {
+    	"php": ">=7.0.0"
+    }
+}
