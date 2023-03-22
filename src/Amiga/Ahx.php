@@ -5,7 +5,7 @@
  * @author : jambonbill <https://github.com/jambonbill/>
  */
 
-namespace AMIGA;
+namespace Amiga;
 
 
 use Exception;
@@ -14,7 +14,7 @@ use Exception;
  * Read/Save AHX File
  * Author: Jambonbill
  */
-class AHX{
+class Ahx{
 
 	// Converted from	
 	// https://github.com/bryc/ahx-web-player/blob/master/ahx.js

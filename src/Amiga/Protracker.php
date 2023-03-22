@@ -5,7 +5,7 @@
  * http://coppershade.org/articles/More!/Topics/Protracker_File_Format/
  */
 
-namespace AMIGA;
+namespace Amiga;
 
 use Exception;
 
@@ -68,18 +68,26 @@ class Protracker{
 	private $debug=false;
 	
 
-	public function loadSong(string $filename)
+
+	/**
+	 * Open protracker file. Readonly
+	 * @param  string $filename [description]
+	 * @return [type]           [description]
+	 */
+	public function open(string $filename): bool
 	{
-		if(!is_readable($filename)){
+		if (!is_readable($filename)) {
 			throw new Exception("$filename Not readable", 1);
 		}	
 		
 		$this->filename=$filename;
 		$this->filesize=filesize($filename);
+		
 		$handle = fopen($filename, "r");
 		
 		$this->decode($handle);
 		fclose($handle);
+		return true;
 	}
 
 
