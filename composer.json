@@ -1,12 +1,18 @@
 {
 	"name":"jambonbill/amiga",
-	"authors": [
+	"type": "library",
+    
+    "authors": [
         {
             "name": "Jambonbill",
             "email": "jambonbill@gmail.com",
-            "homepage": "https://github.com/jambonbill"
+            "homepage": "https://github.com/jambonbill",
+            "role":"developer"
         }
     ],
+
+    "keywords": ["amiga","music","ahx","c64","protracker","module"],
+
     "autoload": {
         "psr-0": {
             "Amiga": "src/"
